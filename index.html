@@ -8,7 +8,7 @@
     <form id="form" action=""><input id="input" autocomplete="off" /><button>Send</button></form>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-      var socket = io("http://localhost:3000/ns1"); // URL 지정! - 접속하고자 하는 namespace
+      var socket = io("/ns1"); // URL 지정! - 접속하고자 하는 namespace
       var form = document.getElementById("form");
       var input = document.getElementById("input");
 
